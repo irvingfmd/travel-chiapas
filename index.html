@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Chiapas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <!-- Container -->
+    <div class="container">
+        <!-- Top Bar -->
+        <div id="top" class="top-bar">
+            <h3 class="intro">Viaja en Travel Chiapas</h3>
+            <p>Aprende Más</p>
+        </div>
+        <!-- Nav Bar -->
+        <div class="nav-bar">
+            <div>
+                <h1>Travel Chiapas</h1>
+            </div>
+            <div class="search">
+                <form>
+                    <div class="input-container">
+                        <input type="text" placeholder="Buscar Lugares">
+                    </div>
+                    <div>
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </form>
+            </div>
+            <div class="menu">
+                <ul class="nav-menu">
+                    <li>
+                        <a onclick="closeMenu()" href="#listinings" class="nav-link">Listados</a>
+                    </li>
+                    <li>
+                        <a onclick="closeMenu()" href="#featured" class="nav-link">Novedades</a>
+                    </li>
+                    <li>
+                        <a onclick="closeMenu()" href="#popular" class="nav-link">Popular</a>
+                    </li>
+                </ul>
+                <div onclick="mobileMenu()" class="mobile">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        <!-- Sort Bar -->
+        <div class="sort-bar">
+            <div>
+                <i class="fa-solid fa-house-chimney"></i>
+                <p>Casa</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-snowflake"></i>
+                <p>Nieve</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-rocket"></i>
+                <p>Espacio</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-tree"></i>
+                <p>Árbol</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-building"></i>
+                <p>Ciudad</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-campground"></i>
+                <p>Cabaña</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-umbrella-beach"></i>
+                <p>Playa</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-volleyball"></i>
+                <p>Deporte</p>
+            </div>
+        </div>
+        <!-- Lista -->
+        <div id="listings" class="listings">
+            <!-- Carta -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1553444836-bc6c8d340ba7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=700" alt="/">
+                <div>
+                    <div class="card-title">
+                        <h4>Ciudad, Estado</h4>
+                        <p>5.0<i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <p><span class="grey">Hosteado por Reality Group, LLC</span></p>
+                    <p><span class="grey">Junio 1 - 7</span></p>
+                    <p>$13,000 MXN la noche</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1591825729269-caeb344f6df2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YWlyYm5ifGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=700" alt="/">
+                <div>
+                    <div class="card-title">
+                        <h4>Ciudad, Estado</h4>
+                        <p>5.0<i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <p><span class="grey">Hosteado por Reality Group, LLC</span></p>
+                    <p><span class="grey">Junio 1 - 7</span></p>
+                    <p>$13,000 MXN la noche</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1559767949-0faa5c7e9992?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YWlyYm5ifGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=700" alt="/">
+                <div>
+                    <div class="card-title">
+                        <h4>Ciudad, Estado</h4>
+                        <p>5.0<i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <p><span class="grey">Hosteado por Reality Group, LLC</span></p>
+                    <p><span class="grey">Junio 1 - 7</span></p>
+                    <p>$13,000 MXN la noche</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1620332372374-f108c53d2e03?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8YWlyYm5ifGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=700" alt="/">
+                <div>
+                    <div class="card-title">
+                        <h4>Ciudad, Estado</h4>
+                        <p>5.0<i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <p><span class="grey">Hosteado por Reality Group, LLC</span></p>
+                    <p><span class="grey">Junio 1 - 7</span></p>
+                    <p>$13,000 MXN la noche</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1614607242094-b1b2cf769ff3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGFpcmJuYnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=700" alt="/">
+                <div>
+                    <div class="card-title">
+                        <h4>Ciudad, Estado</h4>
+                        <p>5.0<i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <p><span class="grey">Hosteado por Reality Group, LLC</span></p>
+                    <p><span class="grey">Junio 1 - 7</span></p>
+                    <p>$13,000 MXN la noche</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1521401830884-6c03c1c87ebb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGFpcmJuYnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=700" alt="/">
+                <div>
+                    <div class="card-title">
+                        <h4>Ciudad, Estado</h4>
+                        <p>5.0<i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <p><span class="grey">Hosteado por Reality Group, LLC</span></p>
+                    <p><span class="grey">Junio 1 - 7</span></p>
+                    <p>$13,000 MXN la noche</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1550355191-aa8a80b41353?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGFpcmJuYnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=700" alt="/">
+                <div>
+                    <div class="card-title">
+                        <h4>Ciudad, Estado</h4>
+                        <p>5.0<i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <p><span class="grey">Hosteado por Reality Group, LLC</span></p>
+                    <p><span class="grey">Junio 1 - 7</span></p>
+                    <p>$13,000 MXN la noche</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1585544314038-a0d3769d0193?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGFpcmJuYnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=700" alt="/">
+                <div>
+                    <div class="card-title">
+                        <h4>Ciudad, Estado</h4>
+                        <p>5.0<i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <p><span class="grey">Hosteado por Reality Group, LLC</span></p>
+                    <p><span class="grey">Junio 1 - 7</span></p>
+                    <p>$13,000 MXN la noche</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1619292585355-ab0e3fd509fe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGFpcmJuYnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=700" alt="/">
+                <div>
+                    <div class="card-title">
+                        <h4>Ciudad, Estado</h4>
+                        <p>5.0<i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <p><span class="grey">Hosteado por Reality Group, LLC</span></p>
+                    <p><span class="grey">Junio 1 - 7</span></p>
+                    <p>$13,000 MXN la noche</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1564013434775-f71db0030976?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGFpcmJuYnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=700" alt="/">
+                <div>
+                    <div class="card-title">
+                        <h4>Ciudad, Estado</h4>
+                        <p>5.0<i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <p><span class="grey">Hosteado por Reality Group, LLC</span></p>
+                    <p><span class="grey">Junio 1 - 7</span></p>
+                    <p>$13,000 MXN la noche</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1591825381767-c7137b8eda0f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fGFpcmJuYnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=700" alt="/">
+                <div>
+                    <div class="card-title">
+                        <h4>Ciudad, Estado</h4>
+                        <p>5.0<i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <p><span class="grey">Hosteado por Reality Group, LLC</span></p>
+                    <p><span class="grey">Junio 1 - 7</span></p>
+                    <p>$13,000 MXN la noche</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aG91c2V8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=700" alt="/">
+                <div>
+                    <div class="card-title">
+                        <h4>Ciudad, Estado</h4>
+                        <p>5.0<i class="fa-solid fa-star"></i></p>
+                    </div>
+                    <p><span class="grey">Hosteado por Reality Group, LLC</span></p>
+                    <p><span class="grey">Junio 1 - 7</span></p>
+                    <p>$13,000 MXN la noche</p>
+                </div>
+            </div>
+        </div>
+        <!-- Novedades -->
+        <div id="featured" class="featured">
+            <div class="title">
+                <h1>Novedades</h1>
+            </div>
+            <div class="featured-wrapper">
+                <div class="main">
+                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aG91c2V8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=800" alt="">
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8aG91c2V8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=1400" alt="">
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aG91c2V8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=1400" alt="">
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGhvdXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=1400" alt="">
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1513584684374-8bab748fbf90?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGhvdXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=1400" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- Popular -->
+        <div id="popular" class="featured">
+            <div class="title">
+                <h1>Popular</h1>
+            </div>
+            <div class="featured-wrapper">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1582063289852-62e3ba2747f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGhvdXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=800" alt="">
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fGhvdXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=1400" alt="">
+                </div>
+                <div class="main">
+                    <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fGhvdXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=1400" alt="">
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1584738766473-61c083514bf4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGhvdXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=1400" alt="">
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1613977257365-aaae5a9817ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fGhvdXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=1400" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- Scroll To Top -->
+        <div class="center">
+            <a href="#top">
+                <i class="fa-solid fa-chevron-up"></i>
+            </a>
+        </div>
+        <!-- Footer -->
+        <div class="footer">
+            <ul class="left-menu">
+                <li>Travel Chiapas</li>
+                <li>Privacidad</li>
+                <li>Términos</li>
+                <li>Destinos</li>
+            </ul>
+            <ul class="right-menu">
+                <li>Soporte</li>
+                <li>Contacto</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Script -->
+    <script>
+        const menuBtn = document.querySelector('.mobile');
+        const navMenu = document.querySelector('.nav-menu');
+
+        const mobileMenu = () => {
+            menuBtn.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        };
+
+        const closeMenu = () => {
+            navMenu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
